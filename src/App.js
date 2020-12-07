@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { FaBeer } from 'react-icons/fa';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <h3> Lets go for a <FaBeer />? </h3>
         <a
           className="App-link"
           href="https://reactjs.org"
