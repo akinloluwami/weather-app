@@ -1,38 +1,80 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body{
+  font-family: Poppins;
+}
+.container{
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.75));
+  padding: 25px;
+  min-height: 100vh;
+}
+.App{
+  background-image: url(./img/Firewatch\ Wallpapers\ 1080X1920\ 1080P.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transform:  all ease 0.5s;
+  height: 100vh;
+}
+.App.warm{
+  background-image: url(./img/2c909564-2b94-4da9-ac46-dde4bf84a113.jpg);
+}
+.search_box{
+  width: 100%;
+  margin:0 0 75px;
+}
+.search_box .search_bar{
+  display: block;
+  width: 100%;
+  padding: 25px;
+  appearance: none;
+  outline: none;
+  border: none;
+  background:none;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 0 0 15px 15px;
+  margin-top: -25px;
+  border-bottom: 6px solid #00000080;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bolder;
+  transition: all ease 0.3s;
+}
+.search_box .search_bar:focus{
+  background-color: rgba(255,255,255,0.8);
+  transition: all ease 0.3s;
+}
+.location_box .location{
+  color: #fff;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: rgba(50,50,70,0.5);
+}
+.location_box .date{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  font-style:italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50,50,70,0.5);
+}
+.weather_box{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather_box .temp{
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  color: #fff;
+  font-size:100px;
+  text-align: center;
+  font-weight: bolder;
+  padding: 15px 25px;
+  text-shadow: 5px 5px rgba(50,50,70,0.5);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather_box .weather{
+  font-size:50px;
+  font-weight: bolder;
+  color: #fff;
 }
