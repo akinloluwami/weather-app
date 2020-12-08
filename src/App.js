@@ -54,7 +54,7 @@ function App() {
     return `${day} ${date}th ${month} ${year} `;
   };
   return (
-    <div className={(weather.main != "undefined") ? ((weather.main.temp > 16) ? 'App warm' : 'App'):'App'}>
+    <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'App warm' : 'App'):'App'}>
       <div className="container">
         <div className="search_box">
           <input
@@ -76,6 +76,7 @@ function App() {
             </div>
 
             <div className="weather_box">
+              <div>{weather.message}</div>
               <div className="temp">{Math.round(weather.main.temp)}°c</div>
               <div className="weather">{weather.weather[0].main}</div>
             </div>

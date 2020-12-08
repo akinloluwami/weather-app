@@ -8,14 +8,16 @@ body{
   min-height: 100vh;
 }
 .App{
-  background-image: url(./img/Firewatch\ Wallpapers\ 1080X1920\ 1080P.jpg);
+  background-image: url(./img/cold.png);
   background-size: cover;
   background-position: bottom;
   transform:  all ease 0.5s;
   height: 100vh;
+  transition: all ease 0.5s;
 }
 .App.warm{
-  background-image: url(./img/2c909564-2b94-4da9-ac46-dde4bf84a113.jpg);
+  background-image: url(./img/warm.png);
+  transition: all ease 0.5s;
 }
 .search_box{
   width: 100%;
