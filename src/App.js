@@ -15,7 +15,7 @@ function App() {
         .then((res) => res.json())
         .then((result) => {
           setWeather(result);
-          setQuery(query);
+          setQuery('');
           console.log(result);
         });
     }
@@ -76,7 +76,6 @@ function App() {
             </div>
 
             <div className="weather_box">
-              <div>{weather.message}</div>
               <div className="temp">{Math.round(weather.main.temp)}°c</div>
               <div className="weather">{weather.weather[0].main}</div>
             </div>
